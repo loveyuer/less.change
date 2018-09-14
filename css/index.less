@@ -1,0 +1,39 @@
+@import "color.less";
+
+.theme(@backcolor:@red){
+	div{
+		font-size:@font-s;
+		p{
+			color:#666;
+			background-color: @backcolor;
+		}
+	}
+}
+.theme-red{
+	.theme();
+}
+.theme-blue{
+    .theme(@blue);
+}
+.theme-yellow{
+    .theme(@yellow);
+}
+.choose-wrap{
+	span{
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		text-align: center;
+		color:#fff;
+		cursor: pointer;
+	}
+	.yellow{
+		background-color: @yellow;
+	}
+	.red{
+		background-color: @red;
+	}
+	.blue{
+		background-color: @blue;
+	}
+}

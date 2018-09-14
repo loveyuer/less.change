@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link type="text/css" rel="stylesheet" href="./css/index.css" />
+	<script src="jquery.js"></script>
+</head>
+<body class="theme-red">
+	<div>
+		<p>123</p>
+	</div>
+	<div class="choose-wrap">
+		<span class="yellow">yellow</span>
+		<span class="red">red</span>
+		<span class="blue">blue</span>
+	</div>
+	<script>
+		$(function(){
+			$('.choose-wrap span').click(function(){
+				var clsName = $(this).attr('class');
+				$('body').attr('class','theme-' + clsName);
+			});
+		});
+	</script>
+</body>
+</html>
